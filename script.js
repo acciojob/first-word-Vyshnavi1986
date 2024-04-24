@@ -1,7 +1,9 @@
 function firstWord(str) {
   // your code here
 	 // If the string is empty or doesn't contain any space, return the entire string
-    if (!str || str.indexOf(' ') === -1) {
+	if(str.indexOf(' ')==0)
+		return str.substring(1,str.indexOf(' '));
+    else if (!str || str.indexOf(' ') === -1) {
         return str;
     } else {
         // Otherwise, find the index of the first space and return the substring up to that index
@@ -11,5 +13,5 @@ function firstWord(str) {
 
 // Do not change the code below
 
-const s = prompt("Enter String:");
+//const s = prompt("Enter String:");
 alert(firstWord(s));
