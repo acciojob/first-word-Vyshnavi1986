@@ -1,11 +1,11 @@
-function firstWord(s) {
+function firstWord(str) {
   // your code here
 	 // If the string is empty or doesn't contain any space, return the entire string
-    if (!s || s.indexOf(' ') === -1) {
-        return s;
+    if (!str || str.indexOf(' ') === -1) {
+        return str;
     } else {
         // Otherwise, find the index of the first space and return the substring up to that index
-        return s.substring(0, s.indexOf(' '));
+        return str.substring(0, str.indexOf(' '));
     }
 }
 
